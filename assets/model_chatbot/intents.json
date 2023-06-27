@@ -1,0 +1,422 @@
+{
+     "intents": [{
+               "tag": "greeting",
+               "patterns": [
+                    "Hallo",
+                    "halo",
+                    "Apa kabar",
+                    "Ada orang disana?",
+                    "Hei",
+                    "Hai"
+
+               ],
+               "responses": [
+                    "Hallo, Selamat datang di Chatbot E-Tilang. Ada yang bisa kami bantu?"
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "salam",
+               "patterns": [
+                    "Assalamualaikum",
+                    "Salam",
+                    "Ass"
+               ],
+               "responses": [
+                    "Waalaikumsalam"
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "bertanya",
+               "patterns": [
+                    "baik",
+                    "bisa",
+                    "saya ingin bertanya",
+                    "mau nanya",
+                    "bertanya",
+                    "nanya"
+               ],
+               "responses": [
+                    "baik, bisa jelaskan pertanyaan anda?"
+
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "goodbye",
+               "patterns": [
+                    "Bye",
+                    "Sampai Jumpa",
+                    "Selamat Tinggal",
+                    "Dadah",
+                    "Dahh"
+               ],
+               "responses": [
+                    "Senang berbincang dengan anda"
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "thanks",
+               "patterns": [
+                    "Terima kasih",
+                    "Makasih",
+                    "Thanks",
+                    "makasi",
+                    "Thank you",
+                    "thanks",
+                    "Terima Kasih Banyak",
+                    "Terima kasih telah membantu saya"
+               ],
+               "responses": [
+                    "Sama-sama, sudah menjadi tugas saya"
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "noanswer",
+               "patterns": [
+                    ""
+               ],
+               "responses": [
+                    "Maaf, bisakah anda mengulangi pertanyaan anda?"
+
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "mulct",
+               "patterns": [
+                    "Berapa besar denda E-Tilang?",
+                    "denda",
+                    "berapa dendanya",
+                    "berapa"
+               ],
+               "responses": [
+                    "-Melanggar rambu lalu lintas dan marka jalan denda tilang elektronik Rp 500.000 atau pidana kurungan 2 bulan -Tidak mengenakan sabuk keselamatan denda tilang elektronik sebesar Rp 250.000 atau kurungan penjara 2 bulan -Mengemudi sambil mengoperasikan Smartphone didenda Rp 750.000 atau kurungan penjara 3 bulan -Melanggar batas kecepatan denda e-tilang Rp 500.000 atau kurungan 2 bulan -Menggunakan pelat nomor palsu denda tilang elektronik Rp500.000 atau pidana kurungan 2 bulan -Berkendara melawan arus didenda Rp 500.000 atau kurangan paling lama 2 bulan -Menerobos lampu merah, denda e-tilang Rp 500.000 atau kurungan 2 bulan -Tidak menggunakan helm atau helm yang digunakan tidak sesuai Standar Nasional Indonesia (SNI) denda tilang elektronik Rp 250.000 atau penjara maksimal 1 bulan -Berboncengan lebih dari 3 orang denda e-tilang Rp 250.000 atau kurungan 1 bulan -Tidak menyalakan lampu saat siang hari bagi sepeda motor didenda Rp 100.000 atau dipenjara 15 hari."
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "cek denda",
+               "patterns": [
+                    "Cara mengecek besaran denda di situs web kejaksaan?",
+                    "cara cek denda di web",
+                    "cara cek denda"
+               ],
+               "responses": [
+                    "Membuka situs web https://tilang.kejaksaan.go.id/ -Memasukkan nomor registrasi tilang atau nomor blangko atau nomor berkas tilang, lalu klik Cari -Nomor tilang itu tertera di surat penilangan yang diberikan pihak kepolisian -Situs web tilang Kejaksaan akan memberikan informasi mengenai tilang daring, kode pembayaran, serta jumlah nominal denda tilang yang harus dibayarkan -Membayar tilang daring melalui situs tilang.kejaksaan.go.id"
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "transaction",
+               "patterns": [
+                    "Bagaimana cara membayar denda secara online?",
+                    "bayar denda",
+                    "cara",
+                    "membayar",
+                    "bagaimana",
+                    "denda online"
+               ],
+               "responses": [
+                    "baik, ingin membayar denda via apa? 1. via kantor Bank BRI, 2. via ATM BRI, 3. via Mobile Banking BRI, 4. via Internet Banking BRI, 5. via EDC BRI, 6. via transfer ATM dari bank lain. bisa ketikkan nomernya dibawah"
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "",
+               "patterns": [
+                    "1",
+                    "Bank BRI",
+                    "via kantor Bank BRI",
+                    "bank bri"
+
+               ],
+               "responses": [
+                    "Cara bayar e-tilang via kantor Bank BRI -Ambil nomor antrian transaksi teller dan isi slip setoran. -Isi 15 angka Nomor Pembayaran Tilang pada kolom Nomor Rekening dan Nominal titipan denda tilang elektronik pada slip setoran. -Serahkan slip setoran kepada Teller BRI. -Teller BRI akan melakukan validasi transaksi. -Simpan Slip Setoran hasil validasi sebagai bukti bayar denda tilang elektronik yang sah. -Slip setoran diserahkan ke penindak ETLE untuk ditukarkan dengan barang bukti yang disita."
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "",
+               "patterns": [
+                    "2",
+                    "via ATM BRI",
+                    "ATM BRI",
+                    "atm bri"
+
+               ],
+               "responses": [
+                    "Bayar denda tilang elektronik via ATM BRI Masukkan Kartu Debit BRI dan PIN Anda. -Pilih menu Transaksi Lain > Pembayaran > Lainnya > BRIVA. -Masukkan 15 angka Nomor Pembayaran Tilang. -Di halaman konfirmasi, pastikan detil denda tilang elektronik sudah sesuai seperti Nomor BRIVA, Nama Pelanggar, dan Jumlah Pembayaran. -Ikuti instruksi untuk menyelesaikan transaksi. -Copy struk ATM sebagai bukti cara bayar e-tilang yang sah dan disimpan. -Struk ATM asli diserahkan ke penindak ETLE untuk ditukarkan dengan barang bukti yang disita."
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "",
+               "patterns": [
+                    "3",
+                    "via Mobile Banking BRI",
+                    "m banking bri",
+                    "mbanking bri",
+                    "mbrimo",
+                    "brimo"
+               ],
+               "responses": [
+                    "Cara bayar e-tilang via Mobile Banking BRI -Login aplikasi BRI Mobile Pilih Menu Mobile Banking BRI > Pembayaran > BRIVA -Masukkan 15 angka Nomor Pembayaran Tilang -Masukkan nominal pembayaran sesuai jumlah denda tilang elektronik yang harus dibayarkan -Transaksi akan ditolak jika pembayaran tidak sesuai dengan jumlah denda titipan -Masukkan PIN Simpan notifikasi SMS sebagai bukti cara bayar e-tilang -Tunjukkan notifikasi SMS ke penindak ETLE untuk ditukarkan dengan barang bukti yang disita."
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "",
+               "patterns": [
+                    "4",
+                    "via Internet Banking BRI",
+                    "internet bri"
+               ],
+               "responses": [
+                    "Bayar denda tilang elektronik via Internet Banking BRI -Login pada alamat Internet Banking BRI -Pilih menu Pembayaran Tagihan > Pembayaran > BRIVA -Pada kolom kode bayar, Masukkan 15 angka Nomor Pembayaran Tilang -Di halaman konfirmasi, pastikan detil denda tilang elektronik sudah sesuai seperti Nomor BRIVA, Nama Pelanggar dan Jumlah Pembayaran -Masukkan password dan mToken -Cetak atau simpan struk pembayaran BRIVA sebagai bukti cara bayar e tilang -Tunjukkan bukti bayar denda tilang elektronik ke penindak ETLE untuk ditukarkan dengan barang bukti yang disita."
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "",
+               "patterns": [
+                    "5",
+                    "via EDC BRI",
+                    "edc bri"
+               ],
+               "responses": [
+                    "Cara bayar e-tilang via EDC BRI -Pilih menu Mini ATM > Pembayaran > BRIVA -Swipe kartu Debit BRI Anda -Masukkan 15 angka Nomor Pembayaran Tilang -Masukkan PIN -Di halaman konfirmasi, pastikan detil pembayaran sudah sesuai seperti Nomor BRIVA, Nama Pelanggar dan Jumlah Pembayaran -Copy dan Simpan struk transaksi sebagai bukti pembayaran -Tunjukkan bukti pembayaran ke penindak ETLE untuk ditukarkan dengan barang bukti yang disita."
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "",
+               "patterns": [
+                    "6",
+                    "via transfer ATM dari bank lain",
+                    "bni",
+                    "bank jateng",
+                    "bca",
+                    "mandiri",
+                    "btn",
+                    "permata",
+                    "danamon",
+                    "mega"
+               ],
+               "responses": [
+                    "Bayar denda tilang elektronik via transfer ATM dari bank lain -Masukkan kartu Debit dan PIN Anda -Pilih menu Transaksi Lainnya > Transfer > Ke Rek Bank Lain -Masukkan kode bank BRI (002) kemudian diikuti dengan 15 angka Nomor Pembayaran Tilang -Masukkan nominal denda tilang elektronik -Transaksi akan ditolak jika pembayaran tidak sesuai dengan jumlah denda titipan -Ikuti instruksi untuk menyelesaikan transaksi -Simpan struk transaksi sebagai bukti bayar cara bayar e tilang."
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "period",
+               "patterns": [
+                    "Kapan tenggat pembayaran dan apa yang terjadi jika pemilik kendaraan tidak membayar denda?",
+                    "tenggang pembayaran",
+                    "kapan",
+                    "tidak bayar",
+                    "batas waktu terakhir",
+                    "waktu",
+                    "terakhir",
+                    "masa tenggang bayar"
+
+               ],
+               "responses": [
+                    "Batas waktu terakhir untuk pembayaran adalah 15 hari dari tanggal pelanggaran. Jika gagal melakukan ini, maka Surat Tanda Nomor Kendaraan (STNK) Anda akan terblokir"
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "violation",
+               "patterns": [
+                    "Bagaimana pemilik kendaraan mengetahui ia telah melanggar?",
+                    "melanggar",
+                    "pelanggar",
+                    "kena tilang"
+
+               ],
+               "responses": [
+                    "Perangkat secara otomatis menangkap pelanggaran lalu lintas yang dimonitor dan mengirimkan media barang bukti pelanggaran ke Back Office di RTMC Polda Metro Jaya. Kemudian, petugas mengidentifikasi data kendaraan menggunakan Electronic Registration & Identification (ERI) sebagai sumber data kendaraan. Atas informasi itu, petugas pun mengirimkan surat konfirmasi ke alamat pemilik kendaraan selambat-lambatnya tiga hari setelah pelanggaran dilakukan"
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "letter",
+               "patterns": [
+                    "Saat menerima surat konfirmasi, apakah pemilik kendaraan sudah ditilang?",
+                    "menerima surat",
+                    "surat",
+                    "ditilang",
+                    "surat konfirmasi"
+
+               ],
+               "responses": [
+                    "Belum. Surat Konfirmasi adalah langkah awal dari penindakan di mana pemilik kendaraan wajib konfirmasi tentang kepemilikan kendaraan dan pengemudi kendaraan pada saat terjadinya pelanggaran"
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "confirmation_letter",
+               "patterns": [
+                    "Jika saya terkena tilang, Berapa lama batas waktu saya untuk konfirmasi?",
+                    "jika kena tilang",
+                    "konfirmasi",
+                    "berapa lama",
+                    "Bagaimana mengonfirmasi Surat Konfirmasi?",
+                    "mengonfirmasi"
+
+               ],
+               "responses": [
+                    "Pemilik kendaraan diberi waktu selama 8 hari dari terjadinya pelanggaran untuk mengonfirmasi"
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "owner",
+               "patterns": [
+                    "Pemilik kendaraan bukan pengemudi kendaraan saat pelanggaran terjadi. Apa yang harus dilakukan?",
+                    "bukan pemilik",
+                    "pemilik",
+                    "owner"
+               ],
+               "responses": [
+                    "Kendaraan yang dioperasikan di jalan raya, memiliki potensi mencelakakan pengguna jalan raya lainnya, bahkan sampai meninggal dunia. Pemilik kendaraan wajib bertanggung jawab kepada siapa ia meminjamkan kendaraan tersebut"
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "sale",
+               "patterns": [
+                    "Apabila kendaraan yang melanggar telah dijual sebelumnya, apa yang harus dilakukan?",
+                    "dijual",
+                    "menjual",
+                    "motor sudah dijual",
+                    "mobil yang sudah dijual"
+               ],
+               "responses": [
+                    "Penerima Surat Konfirmasi tetap harus mengonfirmasi dan memberikan info tentang pemilik baru kendaraan itu. Sehingga, penerima surat telah berkontribusi dalam usaha menertibkan kepemilikan kendaraan. Dalam skenario terburuk di mana kendaraan terkait digunakan untuk tindakan kriminal, maka penerima surat sudah membantu mempermudah penyelidikan"
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "transfer_of_tittle",
+               "patterns": [
+                    "jika kendaraan bermotor bekas yang diperjualbelikan tapi belum balik nama kena tilang?",
+                    "balik nama"
+               ],
+               "responses": [
+                    "Polisi akan mengirimkan sanksi sesuai dengan identitas pemilik kendaraan yang tercatat di STNK. Oleh karena itu, diharapkan jika terjadi jual beli kendaraan segera diurus juga administrasi kepimilikannya. Kalau tidak dibalik nama secara otomatis, kendaraan lama itu akan terkena pajak progresif"
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "rental",
+               "patterns": [
+                    "Bagaimana jika mobil rental kena tilang?",
+                    "rental motor",
+                    "rental mobil",
+                    "rental"
+               ],
+               "responses": [
+                    "harus ada penambahan poin-poin perjanjian saat transaksi menyewakan kendaraan. Penyewa harus bertanggung jawab menyelesaikan sanksi jika terbukti telah melanggar lalu lintas menggunakan kendaraan sewaan. Jangan sampai pengusaha rental mobil dan motor tidak mengetahui jika kendaraan yang disewakan melanggar aturan lalu lintas"
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "payment",
+               "patterns": [
+                    "Bagaimana alur pembayaran kendaraan yang kena tilang elektronik?",
+                    "alur",
+                    "alur pembayaran kena tilang"
+               ],
+               "responses": [
+                    "Tahap 1 Perangkat kamera CCTV di ruas jalan secara otomatis menangkap pelanggaran lalu lintas yang dimonitor dan mengirimkan media barang bukti pelanggaran. Tahap 2 Petugas mengidentifikasi data kendaraan menggunakan Electronic Registration and Identification (ERI) sebagai sumber data kendaraan. Tahap 3 Petugas mengirimkan surat konfirmasi pelanggaran ke alamat pemilik kendaraan bermotor untuk permohonan konfirmasi atas pelanggaran yang terjadi. Surat tersebut dikirim lewat pos. Tahap 4 Pemilik Kendaraan melakukan konfirmasi via website sesuai yang tercantum dalam surat tersebut atau datang langsung ke kantor Sub Direktorat Penegakan Hukum. Konfirmasi pelanggaran berlaku selama delapan hari"
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "fail",
+               "patterns": [
+                    "Bagaimana jika gagal konfirmasi?",
+                    "gagal konfirmasi"
+               ],
+               "responses": [
+                    "Kemungkinan karena pelanggar telah pindah alamat sehingga surat tilang tidak sampai atau kendaraan telah dijual (beralih pemilik). Jika gagal melakukan konfirmasi, Surat Tanda Nomor Kendaraan (STNK) akan diblokir sementara"
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "",
+               "patterns": [
+                    "Apa saja jenis pelanggaran yang terdeteksi E-Tilang?",
+                    "pelanggaran etilan apa saja?",
+                    "apa si jenis pelanggaran yang terdeteksi etilang?"
+               ],
+               "responses": [
+                    "-Melanggar rambu lalu lintas dan marka jalan -Tidak mengenakan sabuk keselamatan -Mengemudi sambil mengoperasikan smartphone -Melanggar batas kecepatan -Menggunakan pelat nomor palsu -Berkendara melawan arus -Menerobos lampu merah -Tidak menggunakan helm -Berboncengan lebih dari 3 orang -Tidak menyalakan lampu saat siang hari bagi sepeda motor."
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "etilang",
+               "patterns": [
+                    "apa itu e-tilang ?",
+                    "apa itu e tilang?",
+                    "apa itu etilang",
+                    "apa itu tilang elektronik",
+                    "tilang elektronik itu apa?",
+                    "etilang itu apa?",
+                    "etilang apa?"
+               ],
+               "responses": [
+                    "Tilang elektronik atau e-tilang merupakan upaya pemerintah dalam menegakkan hukum lalu lintas berbasis teknologi informasi. E-tilang merupakan salah satu upaya pemerintah untuk menekan angka pelanggaran peraturan lalu lintas. Hal ini adalah sebuah terobosan dalam merevolusi hukum lalu lintas dari yang sebelumnya konvensional menjadi lebih modern, menggunakan sejenis kamera CCTV yang disebar di berbagai ruas jalan."
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "options",
+               "patterns": [
+                    "Bagaimana cara kerja E-Tilang?",
+                    "cara kerja etilang?"
+               ],
+               "responses": [
+                    "kamera tilang elektronik dapat menangkap berbagai pelanggaran lalu lintas yang dilakukan oleh pengguna jalan. Mulai dari pelanggaran ganjil-genap, marka jalan, penggunaan ponsel saat berkendara, dan pelanggaran lainnya. Selain dapat menganalisis berbagai jenis pelanggaran, kamera berbentuk CCTV ini juga mengidentifikasi dan menganalisis jenis kendaraan, bahkan nomor registrasi kendaraan bermotor melalui nomor plat kendaraan yang dijadikan rekaman output dalam bentuk image ataupun video. Jadi, data-data kendaraan yang melanggar dari kamera tersebut akan disajikan kepada petugas kepolisian dan nantinya akan diverifikasi. Selanjutnya, petugas akan mengirimkan surat konfirmasi ke alamat pemilik kendaraan sesuai dengan registrasi kendaraan tersebut. Jadi, para pelanggar di jalan akan mendapatkan surat tilang ke alamat yang tertera pada surat kendaraan."
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "",
+               "patterns": [
+                    "tahapan E-tilang bagaimana?",
+                    "bagaimana sih tahapan etilang?"
+               ],
+               "responses": [
+                    "Perangkat ETLE ini merekam dan memotret setiap pelanggaran lalu lintas pada lokasi yang dipasang kamera tilang elektronik. Dari hasil rekaman itu, petugas akan mengidentifikasi plat nomor dan data kendaraan menggunakan Electronic Registration & Identification (ERI). Surat konfirmasi akan dikirimkan via Pos ke alamat pemilik kendaraan bermotor untuk konfirmasi atas pelanggaran yang terjadi. Surat konfirmasi adalah dasar untuk penindakan tilang tersebut. Batas konfirmasi setelah menerima surat itu adalah delapan hari. Jika kendaraan yang dimaksud bukan kendaraan milik orang yang dikirimkan surat konfirmasi, maka itu harus diberitahukan. Cara konfirmasi adalah melalui situs web atau datang langsung ke kantor Sub Direktorat Penegakan Hukum. Usai pelanggaran terkonfirmasi, petugas akan menerbitkan tilang. Pembayaran tilang dilakukan via BRI Virtual Account (BRIVA) dengan kode pembayaran untuk pelanggaran yang terverifikasi dalam penegakan hukum."
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "options",
+               "patterns": [
+                    "Bagaimana cara mengecek E-Tilang secara online?",
+                    "Cara cek e-tilang online"
+               ],
+               "responses": [
+                    "Pertama, buka browser di ponsel dan ketik link https://etle-pmj.info/id/check-data Kedua, masukkan nomor plat kendaraan, nomor mesin kendaraan, dan nomor rangka kendaraan. Ketiga, klik 'Cek Data' yang nantinya akan muncul informasi terkait waktu, lokasi, dan tipe pelanggaran kendaraan. Setelah terdapat informasi status pelanggaran maka pelanggar diharuskan untuk membayar denda sebesar yang tertera pada email atau SMS pelanggar."
+               ],
+               "context": [""]
+          },
+          {
+               "tag": "",
+               "patterns": [
+                    "Cara pembayaran denda E-Tilang?"
+               ],
+               "responses": [
+                    "Perangkat ETLE ini merekam dan memotret setiap pelanggaran lalu lintas pada lokasi yang dipasang kamera tilang elektronik. Dari hasil rekaman itu, petugas akan mengidentifikasi plat nomor dan data kendaraan menggunakan Electronic Registration & Identification (ERI). Surat konfirmasi akan dikirimkan via Pos ke alamat pemilik kendaraan bermotor untuk konfirmasi atas pelanggaran yang terjadi. Surat konfirmasi adalah dasar untuk penindakan tilang tersebut. Batas konfirmasi setelah menerima surat itu adalah delapan hari. Jika kendaraan yang dimaksud bukan kendaraan milik orang yang dikirimkan surat konfirmasi, maka itu harus diberitahukan. Cara konfirmasi adalah melalui situs web atau datang langsung ke kantor Sub Direktorat Penegakan Hukum. Usai pelanggaran terkonfirmasi, petugas akan menerbitkan tilang. Pembayaran tilang dilakukan via BRI Virtual Account (BRIVA) dengan kode pembayaran untuk pelanggaran yang terverifikasi dalam penegakan hukum."
+               ]
+          }
+     ]
+}

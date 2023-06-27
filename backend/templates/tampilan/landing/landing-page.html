@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Simolang - Sistem Monitoring E-Tilang</title>
+
+     <!-- Primary Meta Tags -->
+     <meta name="title" content="Play - Free Open Source HTML Bootstrap Template by UIdeck">
+     <meta name="description" content="Play - Free Open Source HTML Bootstrap Template by UIdeck Team">
+
+     <!-- Open Graph / Facebook -->
+     <meta property="og:type" content="website">
+     <meta property="og:url" content="https://uideck.com/play/">
+     <meta property="og:title" content="Play - Free Open Source HTML Bootstrap Template by UIdeck">
+     <meta property="og:description" content="Play - Free Open Source HTML Bootstrap Template by UIdeck Team">
+     <meta property="og:image" content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg">
+
+     <!-- Twitter -->
+     <meta property="twitter:card" content="summary_large_image">
+     <meta property="twitter:url" content="https://uideck.com/play/">
+     <meta property="twitter:title" content="Play - Free Open Source HTML Bootstrap Template by UIdeck">
+     <meta property="twitter:description" content="Play - Free Open Source HTML Bootstrap Template by UIdeck Team">
+     <meta property="twitter:image" content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg">
+
+     <!--====== Favicon Icon ======-->
+     <link rel="shortcut icon" href="{{url_for('static',filename='dasbor/das-simo.jpg')}}" type="image/svg" />
+
+     <!-- ===== All CSS files ===== -->
+     <link rel="stylesheet" href="{{url_for('static',filename='page/assets/css/bootstrap.min.css')}}" />
+     <link rel="stylesheet" href="{{url_for('static',filename='page/assets/css/animate.css')}}" />
+     <link rel="stylesheet" href="{{url_for('static',filename='page/assets/css/lineicons.css')}}" />
+     <link rel="stylesheet" href="{{url_for('static',filename='page/assets/css/ud-styles.css')}}" />
+
+     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='fontawesome/css/fontawesome.min.css')}}">
+     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='fontawesome/css/all.min.css') }}">
+
+     <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+     <link rel="stylesheet" href="{{ url_for('static', filename='style/chatbot.css') }}">
+</head>
+
+<body>
+     <!-- ====== Header Start ====== -->
+     <header class="ud-header" onclick="closeForm()">
+          <div class="container" onclick="closeForm()">
+               <div class="row">
+                    <div class="col-lg-12">
+                         <nav class="navbar navbar-expand-lg" style="height: 80px;">
+
+                              <a class="navbar-brand">
+                                   <i class="fa-solid fa-camera-retro" style="color: white;"></i>
+                                   <span>
+                                        <h5 style="color: rgb(255, 255, 255);">SIMOLANG</h5>
+                                   </span>
+                                   <!-- <img src="{{url_for('static',filename='assets/simo.png')}}" alt="Simolang" /> -->
+                              </a>
+                              <button class="navbar-toggler">
+                                   <span class="toggler-icon color-white" style="color: white;"> </span>
+                                   <span class="toggler-icon" style="color: white;"> </span>
+                                   <span class="toggler-icon" style="color: white;"> </span>
+                              </button>
+
+                              <div class="navbar-collapse">
+                                   <ul id="nav" class="navbar-nav mx-auto">
+                                        <li class="nav-item">
+                                             <a class="ud-menu-scroll" href="#home">Home</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                             <a class="ud-menu-scroll" href="#about">About</a>
+                                        </li>
+                                        <!-- <li class="nav-item">
+                                             <a class="ud-menu-scroll" href="#pricing">Pricing</a>
+                                        </li> -->
+                                        <li class="nav-item">
+                                             <a class="ud-menu-scroll" href="#faq">Aturan</a>
+                                        </li>
+                                        <!-- <li class="nav-item">
+                                             <a class="ud-menu-scroll" href="#contact">Contact</a>
+                                        </li> -->
+                                        <li class="nav-item nav-item-has-children">
+                                             <a href="javascript:void(0)"> Penyelesaian </a>
+                                             <ul class="ud-submenu">
+                                                  <li class="ud-submenu-item">
+                                                       <a href="/ketentuan" class="ud-submenu-link">
+                                                            Syarat & Ketentuan
+                                                       </a>
+                                                  </li>
+                                                  <li class="ud-submenu-item">
+                                                       <a href="" class="ud-submenu-link">
+                                                            Cara Pembayaran
+                                                       </a>
+                                                  </li>
+                                                  <!-- <li class="ud-submenu-item">
+                                                       <a href="blog.html" class="ud-submenu-link">
+                                                            Blog Grid Page
+                                                       </a>
+                                                  </li>
+                                                  <li class="ud-submenu-item">
+                                                       <a href="blog-details.html" class="ud-submenu-link">
+                                                            Blog Details Page
+                                                       </a>
+                                                  </li>
+                                                  <li class="ud-submenu-item">
+                                                       <a href="login.html" class="ud-submenu-link">
+                                                            Sign In Page
+                                                       </a>
+                                                  </li>
+                                                  <li class="ud-submenu-item">
+                                                       <a href="404.html" class="ud-submenu-link">404 Page</a>
+                                                  </li> -->
+                                             </ul>
+                                        </li>
+                                   </ul>
+                              </div>
+
+                              <div class="navbar-btn d-none d-sm-inline-block">
+                                   <a href="login" class="ud-main-btn ud-white-btn">
+                                        Sign In
+                                   </a>
+                                   <!-- <a class="ud-main-btn ud-white-btn" href="javascript:void(0)">
+                                        Sign Up
+                                   </a> -->
+                              </div>
+                         </nav>
+                    </div>
+               </div>
+          </div>
+     </header>
+     <!-- ====== Header End ====== -->
+
+     <!-- ====== Hero Start ====== -->
+     <section class="ud-hero" id="home">
+          <div class="container">
+               <div class="row">
+                    <div class="col-lg-12">
+                         <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
+                              <h1 class="ud-hero-title">
+                                   Lihat putusannya, Bayar dendanya, Ambil barang buktinya
+                              </h1>
+                              <p class="ud-hero-desc">
+                                   Patuhi aturannya #kapansaja dan #dimanasaja.
+                              </p>
+                              <ul class="ud-hero-buttons">
+                                   <li>
+                                        <a href="#features" class="ud-main-btn ud-white-btn">
+                                             <i class="fa-solid fa-book"></i>
+                                             Cek Panduan
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="#" rel="nofollow noopener" target="_blank"
+                                             class="ud-main-btn ud-link-btn">
+                                             Cari Data <i class="lni lni-arrow-right"></i>
+                                        </a>
+                                   </li>
+                              </ul>
+                         </div>
+                         <div class="ud-hero-brands-wrapper wow fadeInUp" data-wow-delay=".3s">
+                              <img src="{{url_for('static',filename='page/assets/images/hero/brand.svg')}}"
+                                   alt="brand" />
+                         </div>
+                         <div class="ud-hero-image wow fadeInUp" data-wow-delay=".25s">
+                              <img src="{{url_for('static',filename='page/assets/images/hero/hero-image.svg')}}"
+                                   alt="hero-image" />
+                              <img src="{{url_for('static',filename='page/assets/images/hero/dotted-shape.svg')}}"
+                                   alt="shape" class="shape shape-1" />
+                              <img src="{{url_for('static', filename='page/assets/images/hero/dotted-shape.svg')}}"
+                                   alt="shape" class="shape shape-2" />
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!-- ====== Hero End ====== -->
+
+    <!-- ====== Features Start ====== -->
+     <section id="features" class="ud-features">
+          <div class="container">
+               <div class="row">
+                    <div class="col-lg-12">
+                         <div class="ud-section-title">
+                              <span>Panduan</span>
+                              <h2>Tentang E-Tilang</h2>
+                              <p>
+                                   Ada kendala atau masalah terkait pembayaran tilang? Silahkan ikuti petunjuk kami.
+                              </p>
+                         </div>
+                    </div>
+               </div>
+               <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-sm-6">
+                         <div class="ud-single-feature wow fadeInUp" data-wow-delay=".1s">
+                              <div class="ud-feature-icon">
+                                   <i class="fa-solid fa-camera"></i>
+                              </div>
+                              <div class="ud-feature-content">
+                                   <h3 class="ud-feature-title">Online</h3>
+                                   <p class="ud-feature-desc">
+                                        Panduan konfirmasi tilang secara online di website.
+                                   </p>
+                                   <a target="_blank" href="https://www.youtube.com/watch?v=YAdWNIqhEUM" class="ud-feature-link">
+                                        <i class="fa-solid fa-video"></i> Link Youtube
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-sm-6">
+                         <div class="ud-single-feature wow fadeInUp" data-wow-delay=".15s">
+                              <div class="ud-feature-icon">
+                                   <i class="fa-solid fa-table"></i>
+                              </div>
+                              <div class="ud-feature-content">
+                                   <h3 class="ud-feature-title">Sidang</h3>
+                                   <p class="ud-feature-desc">
+                                        Panduan apabila memilih dengan penyelesaian Sidang.
+                                   </p>
+                                   <a target="_blank" href="https://www.youtube.com/watch?v=ua58BTfxSYw" class="ud-feature-link">
+                                        <i class="fa-solid fa-video"></i> Link Youtube
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-sm-6">
+                         <div class="ud-single-feature wow fadeInUp" data-wow-delay=".2s">
+                              <div class="ud-feature-icon">
+                                   <i class="fa-solid fa-car"></i>
+                              </div>
+                              <div class="ud-feature-content">
+                                   <h3 class="ud-feature-title">Kendaraan</h3>
+                                   <p class="ud-feature-desc">
+                                        Panduan apabila kendaraan tidak sesuai dengan yang di miliki.
+                                   </p>
+                                   <a target="_blank" href="https://www.youtube.com/watch?v=SlA3MmPkGvI" class="ud-feature-link">
+                                        <i class="fa-solid fa-video"></i> Link Youtube
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-sm-6">
+                         <div class="ud-single-feature wow fadeInUp" data-wow-delay=".25s">
+                              <div class="ud-feature-icon">
+                                   <i class="fa-solid fa-user"></i>
+                              </div>
+                              <div class="ud-feature-content">
+                                   <h3 class="ud-feature-title">Bukan Pemilik</h3>
+                                   <p class="ud-feature-desc">
+                                        Panduan konfirmasi apabila kendaraan telah dijual.
+                                   </p>
+                                   <a target="_blank" href="https://www.youtube.com/watch?v=9nFZUzlbRUs" class="ud-feature-link">
+                                        <i class="fa-solid fa-video"></i> Link Youtube
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!-- ====== Features End ====== -->
+
+    <!-- ====== About Start ====== -->
+     <section id="about" class="ud-about">
+          <div class="container">
+               <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
+                    <div class="ud-about-content-wrapper">
+                         <div class="ud-about-content">
+                              <span class="tag">SIMOLANG</span>
+                              <h2>Pengertian Etilang</h2>
+                              <p>
+                                   Bukti Pelanggaran atau disingkat Tilang adalah denda yang
+                                   dikenakan oleh Polisi kepada pengguna jalan yang melanggar
+                                   peraturan. Para pengguna jalan seringkali melanggar peraturan yang
+                                   telah ditetapkan oleh undang-undang lalu lintas. Tilang diharapkan
+                                   mampu menangani permasalah berlalu lintas.
+                                   E-Tilang atau Tilang Elektronik ini adalah digitalisasi proses
+                                   tilang, dengan memanfaatkan teknologi diharapkan seluruh proses
+                                   tilang akan lebih efisien dan juga efektif juga membantu pihak
+                                   kepolisian dalam manajemen administrasi.
+                              </p>
+
+                              <!-- <p>
+                                   The main ‘thrust’ is to focus on educating attendees on how to
+                                   best protect highly vulnerable business applications with
+                                   interactive panel.
+                              </p>
+                              <a href="javascript:void(0)" class="ud-main-btn">Learn More</a> -->
+                         </div>
+                    </div>
+                    <div class="ud-about-image">
+                         <img src="{{url_for('static',filename='page/assets/images/about/about-image.svg')}}"
+                              alt="about-image" />
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!-- ====== About End ====== -->
+
+     <!-- ====== Pricing Start ====== -->
+     <section id="pricing" class="ud-pricing">
+          <div class="container">
+               <div class="row">
+                    <div class="col-lg-12">
+                         <div class="ud-section-title mx-auto text-center">
+                              <span>Prosedur</span>
+                              <h2>Prosedur Etilang</h2>
+
+                              Tilang elektronik atau Electronic Traffic Law Enforcement (ETLE) kian meluas hingga berbagai daerah. Upaya ini dilakukan karena pemerintah ingin meningkatkan ketertiban masyarakat saat berkendara di jalan, sehingga keamanan serta kenyamanan pun tercipta. Berkat teknologi yang kian maju, kini penindakan terhadap pelanggar lalu lintas menjadi lebih mudah dan cepat, yaitu dengan bantuan kamera. Dari kamera tersebut, bisa ditangkap bukti pelanggaran berupa gambar lalu secara otomatis dikirim ke back office ETLE. Petugas akan mengidentifikasi data pemilik kendaraan dari nomor polisi yang tercantum. Setelah itu petugas akan mengirimkan surat konfirmasi beserta tanda bukti pelanggaran ke alamat pemilik kendaraan.
+
+                         </div>
+                    </div>
+               </div>
+
+               <div class="row g-0 align-items-center justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                         <div class="ud-single-pricing first-item wow fadeInUp" data-wow-delay=".15s">
+                              <div class="ud-pricing-header">
+                                   <!-- <h3>STARTING FROM</h3>
+                                   <h4>$ 19.99/mo</h4> -->
+                              </div>
+                              <div class="ud-pricing-body">
+
+                                        1. Pelanggar datang menuju pelayanan tilang dengan menunjukan surat tilang yang dibawa oleh pelanggar yang berwarna biru dari Kepolisian dan warna merah dari Dinas Perhubungan
+
+                              </div>
+                              <div class="ud-pricing-footer">
+                                   <!-- <a href="javascript:void(0)" class="ud-main-btn ud-border-btn">
+                                        Purchase Now
+                                   </a> -->
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                         <div class="ud-single-pricing active wow fadeInUp" data-wow-delay=".1s">
+                              <!-- <span class="ud-popular-tag">POPULAR</span> -->
+                              <div class="ud-pricing-header">
+                                   <!-- <h3>STARTING FROM</h3>
+                                   <h4>$ 30.99/mo</h4> -->
+                              </div>
+                              <div class="ud-pricing-body">
+                                   <ul>
+                                        <li>2. Selanjutnya petugas Kejaksaan selaku proses eksekusinya menyambut dan mengambil surat tilang dari pelanggar untuk di cek ke aplikasi E-Tilang Kejaksaan RI (https://tilang.kejaksaan.go.id/) untuk mencarikan nomor kode bayar (Briva) dan dituliskan di surat tilang pelanggar, yang selanjutnya pelanggar dengan surat tilang yang berisikan nomor kode bayar (Briva) tersebut pergi untuk melakukan pembayaran ke Bank BRI terdekat dan bagi pelanggar yang mempunyai ATM BRI bisa langsung membayar di bagian pelayanan tilang melalui mesin EDC</li>
+                                   </ul>
+                              </div>
+                              <div class="ud-pricing-footer">
+                                   <!-- <a href="javascript:void(0)" class="ud-main-btn ud-white-btn">
+                                        Purchase Now
+                                   </a> -->
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                         <div class="ud-single-pricing last-item wow fadeInUp" data-wow-delay=".15s">
+                              <div class="ud-pricing-header">
+                                   <!-- <h3>STARTING FROM</h3>
+                                   <h4>$ 70.99/mo</h4> -->
+                              </div>
+                              <div class="ud-pricing-body">
+                                   <ul>
+                                        <li>3. Setelah pelanggar membayar di Bank BRI, selanjutnya pelanggar tersebut balik kembali ke kantor Kejaksaan untuk menyerahkan bukti bayar dan surat tilang kepada petugas Kejaksaan untuk mengambil barang bukti berupa STNK, SIM, Buku KIR dan kwintansi pengambilan barang bukti berupa motor dan mobil di kepolisian</li>
+
+                                   </ul>
+                              </div>
+                              <div class="ud-pricing-footer">
+                                   <!-- <a href="javascript:void(0)" class="ud-main-btn ud-border-btn">
+                                        Purchase Now
+                                   </a> -->
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!-- ====== Pricing End ====== -->
+
+
+          <!-- ====== FAQ Start ====== -->
+     <section id="faq" class="ud-faq">
+          <div class="shape">
+               <img src="{{url_for('static',filename='page/assets/images/faq/shape.svg')}}" alt="shape" />
+          </div>
+          <div class="container">
+               <div class="row">
+                    <div class="col-lg-12">
+                         <div class="ud-section-title text-center mx-auto">
+                              <span>Petunjuk</span>
+                              <h2>Pembayaran & Denda E-Tilang</h2>
+                              <p>
+                                  Untuk menyelesaikan masalah anda silahkan ikuti langkah dari kami
+                              </p>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="row">
+                    <div class="col-lg-6">
+                         <div class="ud-single-faq wow fadeInUp" data-wow-delay=".1s">
+                              <div class="accordion">
+                                   <button class="ud-faq-btn collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne">
+                                        <span class="icon flex-shrink-0">
+                                             <i class="lni lni-chevron-down"></i>
+                                        </span>
+                                        <span>Contoh Pengecekan E-Tilang?</span>
+                                   </button>
+                                   <div id="collapseOne" class="accordion-collapse collapse">
+                                        <div class="ud-faq-body">
+                                             <li>Langkah pertama, dengan membuka halaman resmi dari Electronic Traffic
+                                                  Law
+                                                  Enforcement (ETLE) yaitu di https://etle-pmj.info/id/check-data.</li>
+                                             <li>Lalu masukkan nomor pelat kendaraan, nomor mesin, dan nomor rangka.
+                                                  Tunas Friends
+                                                  bisa melihatnya di STNK.</li>
+                                             <li>Setelah itu memasukkan kelengkapan data yang diperlukan, klik ‘Cek
+                                                  Data’.</li>
+                                             <li>Jika memang ada pelanggaran, maka data status akan keluar di
+                                                  halaman
+                                                  tersebut.
+                                                  Diikuti dengan catatan waktu, lokasi dan tipe kendaraan. Namun,
+                                                  jika
+                                                  ternyata Anda
+                                                  tidak melakukan pelanggaran, maka akan muncul tampilan ‘No Data
+                                                  Available’ atau ‘Data
+                                                  Tidak Ditemukan’.</li>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="ud-single-faq wow fadeInUp" data-wow-delay=".15s">
+                              <div class="accordion">
+                                   <button class="ud-faq-btn collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo">
+                                        <span class="icon flex-shrink-0">
+                                             <i class="lni lni-chevron-down"></i>
+                                        </span>
+                                        <span>Jenis Pelanggaran Yang Ditindak?</span>
+                                   </button>
+                                   <div id="collapseTwo" class="accordion-collapse collapse">
+                                        <div class="ud-faq-body">
+                                             <p>1. Pelanggaran Traffic Light atau lampu pengatur lalu-lintas</p>
+                                             <p>2. Pelanggaran Marka Jalan</p>
+                                             <p>3. Pelanggaran Ganjil-Genap</p>
+                                             <p>4. Pelanggaran Melawan Arus</p>
+                                             <p>5. Pelanggaran Menggunakan Ponsel Saat Berkendara</p>
+                                             <p>6. Pelanggaran Tidak Memakai Helm</p>
+                                             <p>7. Pelanggaran Sepeda Motor Berbonceng Tiga</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
+                              <div class="accordion">
+                                   <button class="ud-faq-btn collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree">
+                                        <span class="icon flex-shrink-0">
+                                             <i class="lni lni-chevron-down"></i>
+                                        </span>
+                                        <span>Besaran Denda E-Tilang?</span>
+                                   </button>
+                                   <div id="collapseThree" class="accordion-collapse collapse">
+                                        <div class="ud-faq-body">
+                                             <p>1. Menggunakan Ponsel saat Berkendara; Denda sebesar Rp750.000 atau
+                                                  kurungan pidana
+                                                  maksimal 3 bulan.</p>
+                                             <p>2. Tidak Menggunakan Helm saat Mengendarai Motor; Denda sebesar
+                                                  Rp250.000 atau
+                                                  kurungan pidana maksimal 1 bulan.</p>
+                                             <p>3. Tidak Memakai Sabuk Pengaman di Mobil; Denda sebesar Rp250.000 atau
+                                                  kurungan pidana
+                                                  maksimal 1 bulan.</p>
+                                             <p>4. Melanggar Rambu Lalu Lintas dan Marka Jalan; Denda sebesar Rp500.000
+                                                  atau kurungan
+                                                  pidana maksimal 2 bulan.</p>
+                                             <p>5. Menggunakan Pelat Nomor Palsu; Denda sebesar Rp500.000 atau kurungan
+                                                  pidana
+                                                  maksimal 2 bulan.</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-lg-6">
+                         <div class="ud-single-faq wow fadeInUp" data-wow-delay=".1s">
+                              <div class="accordion">
+                                   <button class="ud-faq-btn collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour">
+                                        <span class="icon flex-shrink-0">
+                                             <i class="lni lni-chevron-down"></i>
+                                        </span>
+                                        <span>Cara Pembayaran Denda E-Tilang?</span>
+                                   </button>
+                                   <div id="collapseFour" class="accordion-collapse collapse">
+                                        <div class="ud-faq-body">
+                                             <p>1. Surat tilang dikirim ke alamat pelanggar lalu lintas. Di dalamnya
+                                                  tercantum jelas
+                                                  mengenai pasal yang telah dilanggar, berikut tanggal dan tempat
+                                                  pelanggaran tersebut
+                                                  dilakukan.</p>
+                                             <p>2. Pada tautan situs konfirmasi pelanggaran yang tercantum di dalam
+                                                  surat
+                                                  tilang,
+                                                  Anda dapat menemukan jumlah denda yang harus dibayarkan.</p>
+                                             <p>3. Lakukan konfirmasi terlebih dahulu, kemudian Anda akan mendapatkan
+                                                  e-mail
+                                                  konfirmasi yang berisi tanggal sidang beserta lokasinya.</p>
+                                             <p>4. Anda juga akan menerima pesan singkat (SMS) yang isinya kode Virtual
+                                                  Account BRI
+                                                  atau BRIVA untuk membayar denda.</p>
+                                             <p>5. Pembayaran bisa dilakukan melalui bank transfer atau datang langsung
+                                                  ke
+                                                  sidang
+                                                  pengadilan sesuai dengan jadwal yang ditetapkan. Jika lewat bank
+                                                  transfer, Tunas
+                                                  Friends tidak perlu datang sidang.</p>
+                                             <p>6. Konfirmasi pelanggaran hanya berlaku selama 8 (delapan) hari.
+                                                  Sementara
+                                                  tenggat
+                                                  waktu pembayaran adalah 15 hari sejak tanggal pelanggaran terjadi.
+                                                  Jika
+                                                  lebih dari
+                                                  itu, maka akan dilakukan pemblokiran STNK sementara.</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="ud-single-faq wow fadeInUp" data-wow-delay=".15s">
+                              <div class="accordion">
+                                   <button class="ud-faq-btn collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive">
+                                        <span class="icon flex-shrink-0">
+                                             <i class="lni lni-chevron-down"></i>
+                                        </span>
+                                        <span>Transfer ATM dari Bank Lain</span>
+                                   </button>
+                                   <div id="collapseFive" class="accordion-collapse collapse">
+                                        <div class="ud-faq-body">
+                                             <p>1. Pilih menu "Transaksi Lainnya", pilih
+                                                  "Transfer", lalu pilih "Ke Rek Bank
+                                                  Lain.
+                                             </p>
+                                             <p>2. Masukkan kode bank BRI (002), kemudian
+                                                  diikuti dengan 15 angka Nomor Pembayaran
+                                                  Tilang.</p>
+                                             <p>3. Masukkan nominal denda tilang
+                                                  elektronik.</p>
+                                             <p>4. Transaksi akan ditolak jika pembayaran
+                                                  tidak sesuai dengan jumlah denda titipan
+                                             </p>
+                                             <p>5. Ikuti instruksi untuk menyelesaikan
+                                                  transaksi</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
+                              <div class="accordion">
+                                   <button class="ud-faq-btn collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix">
+                                        <span class="icon flex-shrink-0">
+                                             <i class="lni lni-chevron-down"></i>
+                                        </span>
+                                        <span>Pembayaran melalui Dana</span>
+                                   </button>
+                                   <div id="collapseSix" class="accordion-collapse collapse">
+                                        <div class="ud-faq-body">
+                                           <li>Langkah pertama, pengguna perlu masuk pada aplikasi DANA. Lalu, pada tampilan awal, klik All Service.
+
+                                             <li>Setelah terbuka, gulir ke bawah ke kategori Bills. Pada kotak kategori tersebut terdapat logo MPN G3, klik logo tersebut.</li>
+
+                                                  <li>Pengguna akan diberikan lebih dulu pengenalan terkait fitur ini, ada empat tahap yang perlu pengguna ketahui.</li>
+
+                                                  <li>Lalu, akan ada tampilan fitur Penerimaan Negara, ada tiga sub-biller yakni Pajak Online, Bea dan Cukai, serta PNBP. Anda bisa memilih salah satu dari tiga sub-biller tersebut sesuai kebutuhan.</li>
+
+                                                  <li>Misalnya untuk membayar Pajak Online, pengguna bisa klik Pajak Online. Setelah itu pengguna bisa memasukkan kode billing yang telah dimiliki.</li>
+
+                                                  <li>Lalu, akan muncul detail tagihan sesuai yang tercatat oleh sistem. Setelah itu, pilih metode pembayaran, jika memilih dengan saldo DANA, klik Pay, dan terakhir konfirmasi pembayaran.</li>
+
+                                                  <li>Setelah pembayaran terkonfirmasi, pengguna akan melihat daftar struk digital dan terdapat Nomor Transaksi Penerimaan Negara (NTPN). NTPN ini berfungsi sebagai tanda bahwa wajib pajak telah melakukan transaksi pembayaran pajak.</li>
+
+                                                  <li>Selanjutnya, pengguna bisa mengunduh secara langsung bukti pembayaran tersebut agar lebih mudah disimpan sebagai arsip pembayaran pajak.</li>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!-- ====== FAQ End ====== -->
+          <!-- ====== Testimonials Start ====== -->
+     <section id="testimonials" class="ud-testimonials">
+          <div class="container">
+               <div class="row">
+                    <div class="col-lg-12">
+                         <div class="ud-section-title mx-auto text-center">
+                              <span>Tanggapan Masyarakat</span>
+                              <h2>Terhadap Simolang Apps</h2>
+                              <p>
+                                   E-Tilang atau Electronic Traffic Law Enforcement (E-TLE)
+                              </p>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                         <div class="ud-single-testimonial wow fadeInUp" data-wow-delay=".1s">
+                              <div class="ud-testimonial-ratings">
+                                   <i class="lni lni-star-filled"></i>
+                                   <i class="lni lni-star-filled"></i>
+                                   <i class="lni lni-star-filled"></i>
+                                   <i class="lni lni-star-filled"></i>
+                                   <i class="lni lni-star-filled"></i>
+                              </div>
+                              <div class="ud-testimonial-content">
+                                   <p>
+                                        “Kadang-kadang melanggar lalin itu khilaf. Karena terburu-buru akibat macetnya ,” ujar mahasiswa yang mengaku pernah 3-5 kali ditilang polisi tersebut.
+                                   </p>
+                              </div>
+                              <div class="ud-testimonial-info">
+                                   <div class="ud-testimonial-image">
+                                        <img src="{{url_for('static',filename='page/assets/images/testimonials/author-01.png')}}"
+                                             alt="author" />
+                                   </div>
+                                   <div class="ud-testimonial-meta">
+                                        <h4>Jamal</h4>
+                                        <p>Masyarakat Setempat</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                         <div class="ud-single-testimonial wow fadeInUp" data-wow-delay=".15s">
+                              <div class="ud-testimonial-ratings">
+                                   <i class="lni lni-star-filled"></i>
+                                   <i class="lni lni-star-filled"></i>
+                                   <i class="lni lni-star-filled"></i>
+                                   <i class="lni lni-star-filled"></i>
+                                   <i class="lni lni-star-filled"></i>
+                              </div>
+                              <div class="ud-testimonial-content">
+                                   <p>
+                                        “Dari rakyatmu, warga Indragiri Kota Tegal memiliki pendapat lain. Ia mengapresiasi E-Tilang karena baginya sistem ini mampu menghindari praktik suap di Jalanan.
+                                   </p>
+                              </div>
+                              <div class="ud-testimonial-info">
+                                   <div class="ud-testimonial-image">
+                                        <img src="{{url_for('static',filename='page/assets/images/testimonials/author-02.png')}}"
+                                             alt="author" />
+                                   </div>
+                                   <div class="ud-testimonial-meta">
+                                        <h4>Rakyatmu</h4>
+                                        <p>Rakyat Setempat</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                         <div class="ud-single-testimonial wow fadeInUp" data-wow-delay=".2s">
+                              <div class="ud-testimonial-ratings">
+                                   <i class="lni lni-star-filled"></i>
+                                   <i class="lni lni-star-filled"></i>
+                                   <i class="lni lni-star-filled"></i>
+                                   <i class="lni lni-star-filled"></i>
+                                   <i class="lni lni-star-filled"></i>
+                              </div>
+                              <div class="ud-testimonial-content">
+                                   <p>
+                                        “Banyak oknum yang melakukan pungli dijalan maka baguslah diterapkannya Etilang.
+                                   </p>
+                              </div>
+                              <div class="ud-testimonial-info">
+                                   <div class="ud-testimonial-image">
+                                        <img src="{{url_for('static',filename='page/assets/images/testimonials/author-03.png')}}"
+                                             alt="author" />
+                                   </div>
+                                   <div class="ud-testimonial-meta">
+                                        <h4>Agus</h4>
+                                        <p>Mahasiswa</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="row">
+                    <center>
+                         <div class="col-lg-12">
+                              <div class="ud-brands wow fadeInUp" data-wow-delay=".2s">
+                                   <div class="ud-title">
+                                        <h6>Trusted and Used by</h6>
+                                   </div>
+                                   <center>
+                                        <div class="ud-brands-logo">
+                                             <div class="ud-single-logo">
+                                                  <img src="{{url_for('static',filename='page/assets/images/brands/ayroui.svg')}}"
+                                                       alt="ayroui" />
+                                             </div>
+                                             <div class="ud-single-logo">
+                                                  <img src="{{url_for('static',filename='page/assets/images/brands/uideck.svg')}}"
+                                                       alt="uideck" />
+                                             </div>
+                                             <div class="ud-single-logo">
+                                                  <img src="{{url_for('static',filename='page/assets/images/brands/graygrids.svg')}}"
+                                                       alt="graygrids" />
+                                             </div>
+                                             <div class="ud-single-logo">
+                                                  <img src="{{url_for('static',filename='page/assets/images/brands/lineicons.svg')}}"
+                                                       alt="lineicons" />
+                                             </div>
+                                             <div class="ud-single-logo">
+                                                  <img src="{{url_for('static',filename='page/assets/images/brands/ecommerce-html.svg')}}"
+                                                       alt="ecommerce-html" />
+                                             </div>
+                                        </div>
+                                   </center>
+                              </div>
+                         </div>
+                    </center>
+               </div>
+          </div>
+     </section>
+     <!-- ====== Testimonials End ====== -->
+
+    <!-- ====== Team Start ====== -->
+     <section id="team" class="ud-team">
+          <div class="container">
+               <div class="row">
+                    <div class="col-lg-12">
+                         <div class="ud-section-title mx-auto text-center">
+                              <span>Our Team</span>
+                              <h2>Simolang Team</h2>
+                              <p>
+                                   Dari merekalah terciptanya Etilang dengan nama simolang apps v 1.1
+                              </p>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-sm-6">
+                         <div class="ud-single-team wow fadeInUp" data-wow-delay=".1s">
+                              <div class="ud-team-image-wrapper">
+                                   <div class="ud-team-image">
+                                        <img src="https://i.pinimg.com/564x/74/d1/3d/74d13d149e7564cd6587d86e87ba6a14.jpg"
+                                             alt="team" />
+                                   </div>
+
+                                   <img src="{{url_for('static',filename='page/assets/images/team/dotted-shape.svg')}}"
+                                        alt="shape" class="shape shape-1" />
+                                   <img src="{{url_for('static',filename='page/assets/images/team/shape-2.svg')}}"
+                                        alt="shape" class="shape shape-2" />
+                              </div>
+                              <div class="ud-team-info">
+                                   <h5>Moh. Fiqih Erinsyah</h5>
+                                   <h6>Fullstack Developer</h6>
+                              </div>
+                              <ul class="ud-team-socials">
+                                   <li>
+                                        <a href="https://twitter.com/MusharofChy">
+                                             <i class="lni lni-facebook-filled"></i>
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="https://twitter.com/MusharofChy">
+                                             <i class="lni lni-twitter-filled"></i>
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="https://twitter.com/MusharofChy">
+                                             <i class="lni lni-instagram-filled"></i>
+                                        </a>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-sm-6">
+                         <div class="ud-single-team wow fadeInUp" data-wow-delay=".25s">
+                              <div class="ud-team-image-wrapper">
+                                   <div class="ud-team-image">
+                                        <img src="https://i.pinimg.com/564x/91/b4/c4/91b4c488908cda7f07801d71cba65494.jpg"
+                                             alt="team" />
+                                   </div>
+
+                                   <img src="{{url_for('static',filename='page/assets/images/team/dotted-shape.svg')}}"
+                                        alt="shape" class="shape shape-1" />
+                                   <img src="{{url_for('static',filename='page/assets/images/team/shape-2.svg')}}"
+                                        alt="shape" class="shape shape-2" />
+                              </div>
+                              <div class="ud-team-info">
+                                   <h5>Vita Karenina</h5>
+                                   <h6>NLP Developer</h6>
+                              </div>
+                              <ul class="ud-team-socials">
+                                   <li>
+                                        <a href="https://twitter.com/MusharofChy">
+                                             <i class="lni lni-facebook-filled"></i>
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="https://twitter.com/MusharofChy">
+                                             <i class="lni lni-twitter-filled"></i>
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="https://twitter.com/MusharofChy">
+                                             <i class="lni lni-instagram-filled"></i>
+                                        </a>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-sm-6">
+                         <div class="ud-single-team wow fadeInUp" data-wow-delay=".2s">
+                              <div class="ud-team-image-wrapper">
+                                   <div class="ud-team-image">
+                                        <img src="https://i.pinimg.com/564x/c9/b2/56/c9b25648b56a4fc34eca507e47c20c72.jpg"
+                                             alt="team" />
+                                   </div>
+
+                                   <img src="{{url_for('static',filename='page/assets/images/team/dotted-shape.svg')}}"
+                                        alt="shape" class="shape shape-1" />
+                                   <img src="{{url_for('static',filename='page/assets/images/team/shape-2.svg')}}"
+                                        alt="shape" class="shape shape-2" />
+                              </div>
+                              <div class="ud-team-info">
+                                   <h5>Zidni Rifqi A.</h5>
+                                   <h6>UI/UX Developer</h6>
+                              </div>
+                              <ul class="ud-team-socials">
+                                   <li>
+                                        <a href="https://twitter.com/MusharofChy">
+                                             <i class="lni lni-facebook-filled"></i>
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="https://twitter.com/MusharofChy">
+                                             <i class="lni lni-twitter-filled"></i>
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="https://twitter.com/MusharofChy">
+                                             <i class="lni lni-instagram-filled"></i>
+                                        </a>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-sm-6">
+                         <div class="ud-single-team wow fadeInUp" data-wow-delay=".25s">
+                              <div class="ud-team-image-wrapper">
+                                   <div class="ud-team-image">
+                                        <img src="https://i.pinimg.com/564x/4e/c2/8a/4ec28a4b929e0cff42490f52e717f094.jpg"
+                                             alt="team" />
+                                   </div>
+
+                                   <img src="{{url_for('static',filename='page/assets/images/team/dotted-shape.svg')}}"
+                                        alt="shape" class="shape shape-1" />
+                                   <img src="{{url_for('static',filename='page/assets/images/team/shape-2.svg')}}"
+                                        alt="shape" class="shape shape-2" />
+                              </div>
+                              <div class="ud-team-info">
+                                   <h5>Nisa Ashfiyani</h5>
+                                   <h6>UI/UX Developer</h6>
+                              </div>
+                              <ul class="ud-team-socials">
+                                   <li>
+                                        <a href="https://twitter.com/MusharofChy">
+                                             <i class="lni lni-facebook-filled"></i>
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="https://twitter.com/MusharofChy">
+                                             <i class="lni lni-twitter-filled"></i>
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="https://twitter.com/MusharofChy">
+                                             <i class="lni lni-instagram-filled"></i>
+                                        </a>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-sm-6">
+                         <div class="ud-single-team wow fadeInUp" data-wow-delay=".15s">
+                              <div class="ud-team-image-wrapper">
+                                   <div class="ud-team-image">
+                                        <img src="https://i.pinimg.com/564x/55/32/f3/5532f32f514cdfc36e80a5408922383e.jpg"
+                                             alt="team" />
+                                   </div>
+
+                                   <img src="{{url_for('static',filename='page/assets/images/team/dotted-shape.svg')}}"
+                                        alt="shape" class="shape shape-1" />
+                                   <img src="{{url_for('static',filename='page/assets/images/team/shape-2.svg')}}"
+                                        alt="shape" class="shape shape-2" />
+                              </div>
+                              <div class="ud-team-info">
+                                   <h5>Rizki Khoeruzzaman</h5>
+                                   <h6>Machine Learning</h6>
+                              </div>
+                              <ul class="ud-team-socials">
+                                   <li>
+                                        <a href="https://twitter.com/MusharofChy">
+                                             <i class="lni lni-facebook-filled"></i>
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="https://twitter.com/MusharofChy">
+                                             <i class="lni lni-twitter-filled"></i>
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="https://twitter.com/MusharofChy">
+                                             <i class="lni lni-instagram-filled"></i>
+                                        </a>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!-- ====== Team End ====== -->
+
+     <!-- ====== Contact Start ====== -->
+     <section id="contact" class="ud-contact">
+          <div class="container">
+               <div class="row align-items-center">
+                    <div class="col-xl-8 col-lg-7">
+                         <div class="ud-contact-content-wrapper">
+                              <div class="ud-contact-title">
+                                   <span>LAYANAN PENGADUAN</span>
+                                   <h2> Pengaduan dapat dilakukan melalui :
+                                         <br />
+
+                                   </h2>
+                              </div>
+                              <div class="ud-contact-info-wrapper">
+                                   <div class="ud-single-info">
+                                        <div class="ud-info-icon">
+                                             <i class="lni lni-map-marker"></i>
+                                        </div>
+                                        <div class="ud-info-meta">
+                                             <h5>Lokasi</h5>
+                                             <p>Jl. Kolonel Sugiono No.134, Kemandungan, Kec. Tegal Bar., Kota Tegal, Jawa Tengah 52112</p>
+                                        </div>
+                                   </div>
+                                   <div class="ud-single-info">
+                                        <div class="ud-info-icon">
+                                             <i class="lni lni-envelope"></i>
+                                        </div>
+                                        <div class="ud-info-meta">
+                                             <h5>Email</h5>
+                                             <p>simolang@gmail.com</p>
+                                             <p></p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5">
+                         <div class="ud-contact-form-wrapper wow fadeInUp" data-wow-delay=".2s">
+                              <h3 class="ud-contact-form-title">Kirimn email ke:</h3>
+                              <form class="ud-contact-form">
+                                   <div class="ud-form-group">
+                                        <label for="fullName">Full Name*</label>
+                                        <input type="text" name="fullName" placeholder="Simolang" />
+                                   </div>
+                                   <div class="ud-form-group">
+                                        <label for="email">Email*</label>
+                                        <input type="email" name="email" placeholder="simolang@gmail.com" />
+                                   </div>
+                                   <div class="ud-form-group">
+                                        <label for="phone">Phone*</label>
+                                        <input type="text" name="phone" placeholder="089677342991" />
+                                   </div>
+                                   <div class="ud-form-group">
+                                        <label for="message">Message*</label>
+                                        <textarea name="message" rows="1"
+                                             placeholder="type your message here"></textarea>
+                                   </div>
+                                   <div class="ud-form-group mb-0">
+                                        <button type="submit" class="ud-main-btn">
+                                             Send Message
+                                        </button>
+                                   </div>
+                              </form>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!-- ====== Contact End ====== -->
+
+
+
+     <!-- ====== Footer Start ====== -->
+     <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
+          <div class="shape shape-1">
+               <img src="{{url_for('static',filename='page/assets/images/footer/shape-1.svg')}}" alt="shape" />
+          </div>
+          <div class="shape shape-2">
+               <img src="{{url_for('static',filename='page/assets/images/footer/shape-2.svg')}}" alt="shape" />
+          </div>
+          <div class="shape shape-3">
+               <img src="{{url_for('static',filename='page/assets/images/footer/shape-3.svg')}}" alt="shape" />
+          </div>
+          <div class="ud-footer-widgets">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-xl-3 col-lg-4 col-md-6">
+                              <div class="ud-widget">
+                                   <a href="index.html" class="ud-footer-logo">
+                                        <img src="{{url_for('static',filename='assets/simo.png')}}" alt="logo" />
+                                   </a>
+                                   <p class="ud-widget-desc">
+                                        We create digital experiences for brands and companies by
+                                        using technology.
+                                   </p>
+                                   <ul class="ud-widget-socials">
+                                        <li>
+                                             <a href="https://twitter.com/MusharofChy">
+                                                  <i class="lni lni-facebook-filled"></i>
+                                             </a>
+                                        </li>
+                                        <li>
+                                             <a href="https://twitter.com/MusharofChy">
+                                                  <i class="lni lni-twitter-filled"></i>
+                                             </a>
+                                        </li>
+                                        <li>
+                                             <a href="https://twitter.com/MusharofChy">
+                                                  <i class="lni lni-instagram-filled"></i>
+                                             </a>
+                                        </li>
+                                        <li>
+                                             <a href="https://twitter.com/MusharofChy">
+                                                  <i class="lni lni-linkedin-original"></i>
+                                             </a>
+                                        </li>
+                                   </ul>
+                              </div>
+                         </div>
+
+                         <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                              <div class="ud-widget">
+                                   <h5 class="ud-widget-title">About Us</h5>
+                                   <ul class="ud-widget-links">
+                                        <li>
+                                             <a href="javascript:void(0)">Home</a>
+                                        </li>
+                                        <li>
+                                             <a href="javascript:void(0)">Features</a>
+                                        </li>
+                                        <li>
+                                             <a href="javascript:void(0)">About</a>
+                                        </li>
+                                        <li>
+                                             <a href="javascript:void(0)">Testimonial</a>
+                                        </li>
+                                   </ul>
+                              </div>
+                         </div>
+                         <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+                              <div class="ud-widget">
+                                   <h5 class="ud-widget-title">Features</h5>
+                                   <ul class="ud-widget-links">
+                                        <li>
+                                             <a href="javascript:void(0)">How it works</a>
+                                        </li>
+                                        <li>
+                                             <a href="javascript:void(0)">Privacy policy</a>
+                                        </li>
+                                        <li>
+                                             <a href="javascript:void(0)">Terms of service</a>
+                                        </li>
+                                        <li>
+                                             <a href="javascript:void(0)">Refund policy</a>
+                                        </li>
+                                   </ul>
+                              </div>
+                         </div>
+                         <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+                              <div class="ud-widget">
+                                   <h5 class="ud-widget-title">Our Products</h5>
+                                   <ul class="ud-widget-links">
+                                        <li>
+                                             <a href="https://lineicons.com/" rel="nofollow noopner"
+                                                  target="_blank">Lineicons
+                                             </a>
+                                        </li>
+                                        <li>
+                                             <a href="https://ecommercehtml.com/" rel="nofollow noopner"
+                                                  target="_blank">Ecommerce HTML</a>
+                                        </li>
+                                        <li>
+                                             <a href="https://ayroui.com/" rel="nofollow noopner" target="_blank">Ayro
+                                                  UI</a>
+                                        </li>
+                                        <li>
+                                             <a href="https://graygrids.com/" rel="nofollow noopner"
+                                                  target="_blank">Plain Admin</a>
+                                        </li>
+                                   </ul>
+                              </div>
+                         </div>
+                         <div class="col-xl-3 col-lg-6 col-md-8 col-sm-10">
+                              <div class="ud-widget">
+                                   <h5 class="ud-widget-title">Partners</h5>
+                                   <ul class="ud-widget-brands">
+                                        <li>
+                                             <a href="https://ayroui.com/" rel="nofollow noopner" target="_blank">
+                                                  <img src="{{url_for('static',filename='page/assets/images/footer/brands/ayroui.svg')}}"
+                                                       alt="ayroui" />
+                                             </a>
+                                        </li>
+                                        <li>
+                                             <a href="https://ecommercehtml.com/" rel="nofollow noopner"
+                                                  target="_blank">
+                                                  <img src="{{url_for('static',filename='page/assets/images/footer/brands/ecommerce-html.svg')}}"
+                                                       alt="ecommerce-html" />
+                                             </a>
+                                        </li>
+                                        <li>
+                                             <a href="https://graygrids.com/" rel="nofollow noopner" target="_blank">
+                                                  <img src="{{url_for('static',filename='page/assets/images/footer/brands/graygrids.svg')}}"
+                                                       alt="graygrids" />
+                                             </a>
+                                        </li>
+                                        <li>
+                                             <a href="https://lineicons.com/" rel="nofollow noopner" target="_blank">
+                                                  <img src="{{url_for('static',filename='page/assets/images/footer/brands/lineicons.svg')}}"
+                                                       alt="lineicons" />
+                                             </a>
+                                        </li>
+                                        <li>
+                                             <a href="https://uideck.com/" rel="nofollow noopner" target="_blank">
+                                                  <img src="{{url_for('static',filename='page/assets/images/footer/brands/uideck.svg')}}"
+                                                       alt="uideck" />
+                                             </a>
+                                        </li>
+                                        <li>
+                                             <a href="https://tailwindtemplates.co/" rel="nofollow noopner"
+                                                  target="_blank">
+                                                  <img src="{{url_for('static',filename='page/assets/images/footer/brands/tailwindtemplates.svg')}}"
+                                                       alt="tailwindtemplates" />
+                                             </a>
+                                        </li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div class="ud-footer-bottom">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-md-8">
+                              <ul class="ud-footer-bottom-left">
+                                   <li>
+                                        <a href="javascript:void(0)">Privacy policy</a>
+                                   </li>
+                                   <li>
+                                        <a href="javascript:void(0)">Support policy</a>
+                                   </li>
+                                   <li>
+                                        <a href="javascript:void(0)">Terms of service</a>
+                                   </li>
+                              </ul>
+                         </div>
+                         <div class="col-md-4">
+                              <p class="ud-footer-bottom-right">
+                                   Designed and Developed by
+                                   <a href="https://uideck.com" rel="nofollow">UIdeck</a>
+                              </p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </footer>
+     <!-- ====== Footer End ====== -->
+
+     <!-- ====== Back To Top Start ====== -->
+     <div class="row">
+          <a href="javascript:void(0)" class="back-to-top"
+               style="margin-right: 110px;border-radius: 50px;margin-bottom: 5px;">
+               <i class="lni lni-chevron-up"> </i>
+          </a>
+
+          <a href=" javascript:void(0)" class="back-to-top"
+               style="width: 100px;border-radius: 50px;margin-bottom: 5px;margin-left: 50px;" onclick="openForm()">
+               <i class="fa-regular fa-comment"></i>
+               Chat
+          </a>
+
+          <!-- <a href="javascript:void(0)" class="back-to-top" style="border-radius: 50px;margin-bottom: 5px;"
+               onclick="closeForm()">
+               <i class="lni lni-chevron-down"> </i>
+          </a> -->
+     </div>
+     <div class="chat-popup" id="myForm" style="border-radius: 10px;z-index: 99;">
+          <div style="padding-right: 20px;">
+               <section class="msger"
+                    style="border-radius: 10px;background-image: url('https://i.pinimg.com/736x/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg');">
+                    <div class="row">
+                    </div>
+
+                    <header class="msger-header" style="background-color: #0d6efd;border-radius: 10px;height: 90px;"
+                         onclick="closeForm()">
+                         <div class="msger-header-title">
+                              <!-- <div class="row"> -->
+                              <div style="float: left;margin-left: 5px;">
+                                   <a><img src="{{url_for('static',filename='style/imo.jpg')}}"
+                                             style="border-radius: 100px;width: 60px;height: 60px;margin-bottom: 30px;" />
+                                        <span style="margin-left: 10px;margin-top: 5px;">
+                                             <h4 style="color: white;float: left;margin-left: 0px;">Simo</h4>
+                                             <p style=" color: white;"><span style="width: 130px;margin-right: 85px;"><i
+                                                            class="fa-solid fa-star" style="color: rgb(6, 221, 6);"></i>
+                                                       Sedang
+                                                       Online</span></p>
+                                        </span>
+                                   </a>
+                              </div>
+                              <div style="float: right;">
+                                   <!-- <i class="fa-solid fa-xmark col-2" style="float: right;margin-top: 3px;"
+                                        onclick="closeForm()"></i></a> -->
+                                   <button
+                                        style="border-radius: 50px;width: 30px;margin-top: 20px;margin-right: 15px;background-color: #0d6efd;"
+                                        onclick="closeForm()">
+                                        <center>
+                                             <i class="fa-solid fa-xmark col-2"
+                                                  style="color: white;margin-right: 5px;"></i></center>
+                                   </button>
+                              </div>
+                         </div>
+                    </header>
+
+                    <main class="msger-chat"
+                         style="background-image: url('https://i.pinimg.com/736x/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg');">
+                         <div class="msg left-msg">
+                              <div class="msg-bubble">
+                                   <div class="msg-info">
+                                        <div class="msg-info-name">Simo</div>
+                                        <div class="msg-info-time">12:45</div>
+                                   </div>
+
+                                   <div class="msg-text wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+                                        Hi, Welcome to Simolang Bot! Tanyakan Seputar E-Tilang 😄
+                                   </div>
+                              </div>
+                         </div>
+                    </main>
+
+                    <form class="msger-inputarea">
+                         <input type="text" class="msger-input" id="textInput" placeholder="Ketik pesan anda...">
+                         <button type="submit" class="msger-send-btn" style="border-radius: 50px;">Send</button>
+
+                    </form><br />
+               </section>
+          </div>
+     </div>
+     <!-- ====== Back To Top End ====== -->
+
+     <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+     <script>
+          const msgerForm = get(".msger-inputarea");
+          const msgerInput = get(".msger-input");
+          const msgerChat = get(".msger-chat");
+          const msgwow = get(".wow");
+
+          // Icons made by Freepik from www.flaticon.com
+          const BOT_IMG = "https://image.flaticon.com/icons/svg/327/327779.svg";
+          const PERSON_IMG = "https://image.flaticon.com/icons/svg/145/145867.svg";
+          const BOT_NAME = "Simo";
+          const PERSON_NAME = "You";
+
+          msgerForm.addEventListener("submit", event => {
+               event.preventDefault();
+
+               const msgText = msgerInput.value;
+               if (!msgText) return;
+
+               appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
+               msgerInput.value = "";
+               botResponse(msgText);
+          });
+
+          function appendMessage(name, img, side, text) {
+               //   Simple solution for small apps
+               const msgHTML = `
+               <div class="msg ${side}-msg">
+               <div class="msg-bubble">
+                    <div class="msg-info">
+                    <div class="msg-info-name">${name}</div>
+                    <div class="msg-info-time">${formatDate(new Date())}</div>
+                    </div>
+
+                    <div class="msg-text msgwow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">${text}</div>
+               </div>
+               </div>
+               `;
+
+               msgerChat.insertAdjacentHTML("beforeend", msgHTML);
+               msgerChat.scrollTop += 500;
+          }
+
+          function botResponse(rawText) {
+
+               // Bot Response
+               $.get("/get", {
+                    msg: rawText
+               }).done(function (data) {
+                    console.log(rawText);
+                    console.log(data);
+                    const msgText = data;
+                    appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
+
+               });
+
+          }
+
+          // Utils
+          function get(selector, root = document) {
+               return root.querySelector(selector);
+          }
+
+          function formatDate(date) {
+               const h = "0" + date.getHours();
+               const m = "0" + date.getMinutes();
+
+               return `${h.slice(-2)}:${m.slice(-2)}`;
+          }
+     </script>
+
+     <!-- Scripts -->
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+     <script>
+          function openForm() {
+               document.getElementById("myForm").style.display = "block";
+          }
+
+          function closeForm() {
+               document.getElementById("myForm").style.display = "none";
+          }
+     </script>
+
+     <!-- ====== All Javascript Files ====== -->
+     <script src="{{url_for('static',filename='page/assets/js/bootstrap.bundle.min.js')}}"></script>
+     <script src="{{url_for('static',filename='page/assets/js/wow.min.js')}}"></script>
+     <script src="{{url_for('static',filename='page/assets/js/main.js')}}"></script>
+     <script>
+          // ==== for menu scroll
+          const pageLink = document.querySelectorAll(".ud-menu-scroll");
+
+          pageLink.forEach((elem) => {
+               elem.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    document.querySelector(elem.getAttribute("href")).scrollIntoView({
+                         behavior: "smooth",
+                         offsetTop: 1 - 60,
+                    });
+               });
+          });
+
+          // section menu active
+          function onScroll(event) {
+               const sections = document.querySelectorAll(".ud-menu-scroll");
+               const scrollPos =
+                    window.pageYOffset ||
+                    document.documentElement.scrollTop ||
+                    document.body.scrollTop;
+
+               for (let i = 0; i < sections.length; i++) {
+                    const currLink = sections[i];
+                    const val = currLink.getAttribute("href");
+                    const refElement = document.querySelector(val);
+                    const scrollTopMinus = scrollPos + 73;
+                    if (
+                         refElement.offsetTop <= scrollTopMinus &&
+                         refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+                    ) {
+                         document
+                              .querySelector(".ud-menu-scroll")
+                              .classList.remove("active");
+                         currLink.classList.add("active");
+                    } else {
+                         currLink.classList.remove("active");
+                    }
+               }
+          }
+
+          window.document.addEventListener("scroll", onScroll);
+     </script>
+</body>
+
+</html>

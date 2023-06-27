@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block title %} Admin - Video Testing {% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+     <div>
+          <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+               aria-label="breadcrumb">
+               <ol class="breadcrumb bg-primary">
+                    <li class="breadcrumb-item"><a href="">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Video Testing
+                    </li>
+               </ol>
+          </nav>
+     </div>
+     <div class="row push">
+          <div class="col-md-12">
+               <div class="card">
+                    <div class="card-body">
+                         <div style="overflow: auto;">
+                              <!-- <center>
+                                   <video controls width="90%" height="450">
+                                        <source src="{{ url_for('video') }}" type="video/mp4">
+                                   </video>
+                              </center> -->
+                              <center>
+                                   <img style="border-radius: 10px;" src="{{ url_for('video') }}" width="270px"
+                                        height="480px" />
+                              </center>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     </form>
+</div>
+
+{% endblock %}

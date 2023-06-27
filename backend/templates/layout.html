@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{% block title %} {% endblock %}</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" type="text/css"
+    href="{{url_for('static',filename='dasbor/template/vendors/feather/feather.css')}}">
+  <link rel="stylesheet" type="text/css"
+    href="{{url_for('static',filename='dasbor/template/vendors/ti-icons/css/themify-icons.css')}}">
+  <link rel="stylesheet" type="text/css"
+    href="{{url_for('static',filename='dasbor/template/vendors/css/vendor.bundle.base.css')}}">
+  <!-- endinject -->
+
+  <link rel="stylesheet" type="text/css"
+    href="{{url_for('static',filename='dasbor/template/vendors/ti-icons/css/themify-icons.css')}}">
+
+  <!-- End plugin css for this page -->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='fontawesome/css/fontawesome.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='fontawesome/css/all.min.css') }}">
+  <!-- inject:css -->
+  <link rel="stylesheet" type="text/css"
+    href="{{url_for('static',filename='dasbor/template/css/vertical-layout-light/style.css')}}">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="{{url_for('static',filename='landing/images/favicon.png')}}" />
+
+  <link href="{{url_for('static',filename='datatables/css/bootstrap4.css')}}" rel="stylesheet" type="text/css" />
+  <link href="{{url_for('static',filename='datatables/css/buttons.bootstrap4.css')}}" rel="stylesheet"
+    type="text/css" />
+
+</head>
+
+<body>
+  <div class="container-scroller">
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="#">
+          <div class="row">
+            <div class="col-md-12">
+              <img style="width: 100px;height: 50px;" src="{{url_for('static',filename='dasbor/simolang-nav.jpg')}}"
+                alt="Simolang-Logo" />
+            </div>
+          </div>
+        </a>
+        <a class="navbar-brand brand-logo-mini" href="#"><img
+            src="{{url_for('static',filename='dasbor/Simolang Logo.jpg')}}" alt="Simolang-Logo" /></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class="icon-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="cariKat" onkeyup="prosesMenu()" placeholder="Search now"
+                aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+
+          <li class="nav-item nav-profile dropdown">
+            <div class="u-text">
+              <h4 id="profileDropdown" style="margin-top: 10px;height: 30px;" class="btn btn-xs btn-primary btn-sm">
+                Website Simolang
+              </h4>
+            </div>
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="{{url_for('static',filename='dasbor/Simolang Logo.jpg')}}" alt="profile" />
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown"
+              style="width: 250px;">
+              <div class="row">
+                <div class="col-md-4">
+                  <img style="margin-left: 20px;margin-top: 10px;width: 60px;height: 60px;"
+                    src="{{url_for('static',filename='dasbor/Simolang Logo.jpg')}}" alt="profile"
+                    class="avatar-img rounded" />
+
+                </div>
+                <div class="col-md-8">
+                  <div class="u-text" style="margin-top: 10px;">
+                    <p>Website Simolang</p>
+                    <a href="" class="btn btn-xs btn-primary btn-sm">View
+                      Profile</a>
+                  </div>
+                </div>
+              </div><br />
+              <a href="" class="dropdown-item">
+                <i class="ti-settings text-primary"></i>
+                Edit Profil
+              </a>
+              <a class="dropdown-item" href="{{'logout'}}">
+                <i class="ti-power-off text-primary"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul id="daftarKategori" class="nav">
+          <li class="nav-item" style="margin-left: 17px;">
+            <span class="menu-title" style="color: rgb(190, 190, 190);">Menu</span>
+          </li>
+          <li class="nav-item">
+
+            <a class="nav-link" href="/dashboard">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/tilang">
+              <i class="fa-solid fa-book menu-icon"></i>
+              <span class="menu-title">History Tilang</span>
+            </a>
+          </li>
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link" href="/surat">-->
+<!--              <i class="fa-regular fa-envelope menu-icon"></i>-->
+<!--              <span class="menu-title">Surat Tilang</span>-->
+<!--            </a>-->
+<!--          </li>-->
+          <li class="nav-item">
+            <a class="nav-link" href="/upload">
+              <i class="fa-solid fa-upload menu-icon"></i>
+              <span class="menu-title">Upload Image</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/video_testing">
+              <i class="fa-solid fa-video menu-icon"></i>
+              <span class="menu-title">Video Testing</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/live_page">
+              <i class="fa-solid fa-camera menu-icon"></i>
+              <span class="menu-title">Live Stream</span>
+            </a>
+          </li>
+          <li class="nav-item" style="margin-left: 17px;">
+            <span class="menu-title" style="color: rgb(190, 190, 190);">Data</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/admin_form">
+              <i class="fa-solid fa-user menu-icon"></i>
+              <span class="menu-title">Data Admin</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/users_form">
+              <i class="fa-solid fa-users menu-icon"></i>
+              <span class="menu-title">Data Users</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          {% block content %} {% endblock %}
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2022. Capstone
+              Project Kelompok 4</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i
+                class="ti-heart text-danger ml-1"></i></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+
+  <!-- plugins:js -->
+  <script src="{{url_for('static',filename='dasbor/template/vendors/js/vendor.bundle.base.js')}}"></script>
+  <!-- endinject -->
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="{{url_for('static',filename='dasbor/template/js/off-canvas.js')}}"></script>
+  <script src="{{url_for('static',filename='dasbor/template/js/hoverable-collapse.js')}}"></script>
+  <script src="{{url_for('static',filename='dasbor/template/js/template.js')}}"></script>
+  <script src="{{url_for('static',filename='dasbor/template/js/settings.js')}}"></script>
+  <script src="{{url_for('static',filename='dasbor/template/js/todolist.js')}}"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="{{url_for('static',filename='dasbor/template/js/dashboard.js')}}"></script>
+  <script src="{{url_for('static',filename='dasbor/template/js/Chart.roundedBarCharts.js')}}"></script>
+  <!-- End custom js for this page-->
+
+  <script src="https://cdn.tiny.cloud/1/po9r5rtyigi9k6233qld3yekxkqfn2haky39k30gv8chhdma/tinymce/5/tinymce.min.js"
+    referrerpolicy="origin"></script>
+
+  <script>
+    tinymce.init({
+      selector: 'textarea',
+      plugins: 'advlist autolink lists link image charmap preview anchor pagebreak',
+      toolbar_mode: 'floating',
+      forced_root_block: false,
+      forced_p_block: false,
+    });
+  </script>
+
+  <script type="text/javascript">
+    $('.clockpicker').clockpicker();
+  </script>
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+  <script type="text/javascript" src="{{url_for('static',filename='datatables/js/jquery.dataTables.min.js')}}"></script>
+  <script type="text/javascript" src="{{url_for('static',filename='datatables/js/dataTables.bootstrap4.min.js')}}">
+  </script>
+  <script type="text/javascript" src="{{url_for('static',filename='datatables/js/dataTables.buttons.min.js')}}">
+  </script>
+  <script type="text/javascript" src="{{url_for('static',filename='datatables/js/buttons.bootstrap4.min.js')}}">
+  </script>
+  <script type="{{url_for('static',filename='datatables/js/jszip.min.js')}}"></script>
+  <script type="text/javascript" src="{{url_for('static',filename='datatables/js/pdfmake.min.js')}}">
+  </script>
+  <script type="text/javascript" src="{{url_for('static',filename='datatables/js/vfs_fonts.js')}}"></script>
+  <script type="text/javascript" src="{{url_for('static',filename='datatables/js/buttons.html5.min.js')}}">
+  </script>
+  <script type="text/javascript" src="{{url_for('static',filename='datatables/js/buttons.colVis.min.js')}}">
+  </script>
+
+  <script>
+    function prosesMenu() {
+      var input = document.getElementById("cariKat");
+      var filter = input.value.toLowerCase();
+      var ul = document.getElementById("daftarKategori");
+      var li = document.querySelectorAll("li")
+      console.log(li)
+      for (var i = 0; i < li.length; i++) {
+        var ahref = document.querySelectorAll("a")[i];
+        if (ahref.innerHTML.toLowerCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+  <script>
+    $(function () {
+      $("#datepicker").datepicker();
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $('#example').DataTable();
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $('#myTable').DataTable();
+    });
+  </script>
+
+  <script>
+    var dt = new Date();
+    document.getElementById("tanggal").innerHTML = dt.toLocaleDateString();
+  </script>
+
+  <script type="text/javascript">
+    window.onload = function () {
+      jam();
+    }
+
+    function jam() {
+      var e = document.getElementById('jam'),
+        d = new Date(),
+        h, m, s;
+      h = d.getHours();
+      m = set(d.getMinutes());
+      s = set(d.getSeconds());
+
+      e.innerHTML = h + ':' + m + ':' + s;
+
+      setTimeout('jam()', 1000);
+    }
+
+    function set(e) {
+      e = e < 10 ? '0' + e : e;
+      return e;
+    }
+  </script>
+</body>
+
+</html>
